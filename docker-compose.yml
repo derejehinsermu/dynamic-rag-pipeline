@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend  # path to the Flask app directory
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./backend:/app
+      - ./uploads:/app/uploads  # Mount the uploads folder
+    environment:
+      - FLASK_ENV=development  # Specify Flask environment
+    env_file: 
+      - .env  # Load environment variables from the .env file
+
+  frontend:
+    build:
+      context: ./frontend-app  # path to the React app directory
+    ports:
+      - "3000:3000"
+    stdin_open: true  # Keep stdin open for React app to run
+
+# To run
+# docker-compose up --build
+# To stop
+# docker-compose down
