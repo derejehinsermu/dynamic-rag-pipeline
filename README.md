@@ -98,6 +98,29 @@ Open your browser and navigate to http://localhost:3000 to interact with the sys
 
 ![Demo](https://github.com/user-attachments/assets/68d0e863-96b5-456e-bd69-d71329f6dbd0)
 
+## Working with Prompts
+
+For users interested in customizing or experimenting with the AI model's behavior, the Prompt folder contains predefined prompts for both the Resume Reviewer and Legal Contract Advisor functionalities. These prompts guide the model in generating appropriate responses based on the selected pipeline.
+How to Use
+
+1. **Navigate to the Prompt Folder**:
+        The prompts folder contains subdirectories for each functionality, such as Resume_reviewer and legal_contract_advisor.
+        Each subdirectory includes base prompts and advanced prompts used in the RAG pipelines.
+
+2. **Modify or Create Prompts**:
+        Edit existing prompt files or create new ones to modify the model's behavior.
+        Ensure that each prompt file is formatted correctly and contains clear instructions for the model.
+        Save your changes in the corresponding folder.
+3. **Update Prompt Paths in the Backend**:
+        After modifying prompts, ensure the backend Flask application points to the correct prompt file paths.
+        The paths are defined in the backend code, allowing for easy switching between different prompts.
+   
+5. **Test and Iterate**:
+        Start the backend and frontend applications.
+        Experiment with different prompts and observe the model's responses in the React frontend.
+        Refine the prompts to achieve the desired output for each use case.
+
+
 ## Contributing
 
 Contributions are welcome! 
