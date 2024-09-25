@@ -91,7 +91,7 @@ This project develops a dual-function Resume Reviewer and Legal Contract Advisor
    Open a new terminal, navigate to the frontend directory, and start the React development server:
 
     ```bash
-    cd ../frontend
+    cd ../frontend-app
     npm start
 
 Open your browser and navigate to http://localhost:3000 to interact with the system.
